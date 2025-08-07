@@ -7,3 +7,10 @@ data %>%
   pivot_longer(cols = -c(1:2), names_to = "variable", values_to = "value") -> data_long
 data_long
 
+
+data_long %>%
+  pivot_wider(names_from = variable, values_from = value) -> data_wide
+data_wide
+
+saaasfadvvadbvagv
+
